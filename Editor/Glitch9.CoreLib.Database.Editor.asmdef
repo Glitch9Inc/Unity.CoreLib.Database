@@ -1,0 +1,18 @@
+{
+    "name": "Glitch9.CoreLib.Database.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:66d06474790de694e9abbd80463e46a0"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
