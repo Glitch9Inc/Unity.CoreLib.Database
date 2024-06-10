@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 // ReSharper disable StaticMemberInGenericType
 
-namespace Glitch9.CoreLib.Database
+namespace Glitch9.Database
 {
     public abstract class AddressableDatabase<TSelf, TValue> : DatabaseBase<TSelf, int, AddressableObject<TValue>>
         where TSelf : AddressableDatabase<TSelf, TValue>

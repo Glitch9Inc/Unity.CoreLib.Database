@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-namespace Glitch9.CoreLib.Database
+namespace Glitch9.Database
 {
     public class AddressableObject<TValue> where TValue : UnityEngine.Object
     {

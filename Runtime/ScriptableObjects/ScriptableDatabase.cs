@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Glitch9.CoreLib.Database
+namespace Glitch9.Database
 {
     [CreateAssetMenu(fileName = "Scriptable Database", menuName = "Glitch9/Database/Scriptable Database")]
     public class ScriptableDatabase : ScriptableObject

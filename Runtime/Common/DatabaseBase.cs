@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Glitch9.CoreLib.Database
+namespace Glitch9.Database
 {
     public abstract class DatabaseBase<TSelf, TKey, TValue>
         where TSelf : DatabaseBase<TSelf, TKey, TValue>

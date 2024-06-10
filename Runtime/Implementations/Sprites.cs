@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Glitch9.CoreLib.Database
+namespace Glitch9.Database
 {
     public class Sprites : AddressableDatabase<Sprites, Sprite>
     {
