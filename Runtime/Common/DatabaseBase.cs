@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Glitch9.Database
@@ -11,6 +12,12 @@ namespace Glitch9.Database
         protected static Dictionary<TKey, TValue> InternalDatabase;
         public static string Name => typeof(TSelf).Name;
         public static IReadOnlyDictionary<TKey, TValue> DB => InternalDatabase;
+
+        public static async UniTask Initialize(IDatabaseLoader<TKey, TValue> loader)
+        {
+            if (loader == null) throw new System.ArgumentNullException(nameof(loader));
+            InternalDatabase = await loader.LoadDatabaseAsync(Name);
+        }
 
         /// <summary>
         /// 에디터에서 Application.isPlaying이 false일때 인스턴스를 불러오기 위해 사용
